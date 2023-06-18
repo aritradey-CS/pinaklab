@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      body {
+        background-color: #fdd11e;
+      }
+
+      .container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 75vh;
+      }
+
+      .circle {
+        background-color: #b19215;
+        width: 100px;
+        height: 100px;
+        border: none;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      
+      .circle span {
+        font-size: 10vh;
+        opacity: 0.5; /* Set the opacity to make the text transparent */
+      }
+      
+      .title {
+        text-align: center;
+        margin-bottom: 20px;
+        color: white;
+      }
+
+      .footer {
+        margin: 0;
+        padding: 0;
+        background-color: #ff555a;
+        height: 23vh;
+        width: 200vh;
+        text-align: center;
+        position: relative;
+      }
+
+      .footer:before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 50%;
+        transform: translateX(-50%) rotate(180deg);
+        width: 0;
+        height: 0;
+        border-left: 100px solid transparent;
+        border-right: 100px solid transparent;
+        border-bottom: 50px solid #fdd11e;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1 class="title">Pinak Idea Lab</h1>
+      <div class="circle">
+        <span>:)</span>
+      </div>
+    </div>
+    <div class="footer">This is the footer.</div>
+  </body>
+</html>
